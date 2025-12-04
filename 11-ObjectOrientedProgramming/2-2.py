@@ -1,16 +1,17 @@
-class Square:
-   def __init__(self, a):
-      self.a = a
-   def area(self):
-      return self.a * self.a
-   def perimeter(self):
-      return self.a  * 4
-      
+# class definition
+class Song:
+   def __init__(self,artist,track_title,album,year):
+      self.artist = artist
+      self.track = track_title
+      self.album = album
+      self.year = year
+   def __str__(self):
+      return(f"Performer: {self.artist}\nTitle: {self.track}\nAlbum: {self.album}\nYear: {self.year}")
 
-square1 = Square(4)
-square2 = Square(6)
+# object creation
+song1 = Song("Ed Sheeran", "Hearts Don't Break Around Here", "Devide", 2017)
+song2 = Song("Queen", "Bohemian Rhapsody", "A Night at the Opera", 1975)
 
-print('Square with side 4:')
-print(f"'Area is {square1.area()}, Perimeter is {square1.perimeter()}")
-print ('Square with side 6:')
-print(f"'Area is {square2.area()}' Perimeter is {square2.perimeter()}")
+## object usage
+print(song1)
+print(song2)
