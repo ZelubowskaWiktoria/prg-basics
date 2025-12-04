@@ -8,6 +8,9 @@ class TaxiRide:
         self.distance = distance
         self.fare = self.distance * self.rate_per_km
 
+    def print_recieve(self, rate_per_km,  distance, ):
+        self.distance = 
+
 
 def main():
     # your program
